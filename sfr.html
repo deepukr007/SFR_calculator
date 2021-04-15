@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<title>SFRtotal</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: SFRtotal;
+		--web-view-id: SFRtotal;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: SFRtotal;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#SFRtotal {
+		position: absolute;
+		width: 393px;
+		height: 864px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: SFRtotal;
+		--web-view-id: SFRtotal;
+		--web-enable-deep-linking: true;
+	}
+	#SFR_Result {
+		position: absolute;
+		width: 305px;
+		height: 62px;
+		left: 45px;
+		top: 386px;
+		overflow: visible;
+	}
+	#SFR_plate {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.SFR_plate {
+		position: absolute;
+		overflow: visible;
+		width: 305px;
+		height: 36px;
+		left: 0px;
+		top: 0px;
+	}
+	#ID199 {
+		left: 19px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 33px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Student_Faculty_Ratio {
+		left: 4px;
+		top: 39px;
+		position: absolute;
+		overflow: visible;
+		width: 170px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(162,162,162,1);
+	}
+	#Button {
+		position: absolute;
+		width: 190px;
+		height: 36px;
+		left: 102px;
+		top: 310px;
+		overflow: visible;
+	}
+	#Button_plate {
+		fill: rgba(72,229,170,1);
+	}
+	.Button_plate {
+		position: absolute;
+		overflow: visible;
+		width: 190px;
+		height: 36px;
+		left: 0px;
+		top: 0px;
+	}
+	#Submit {
+		left: 59px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 73px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(8,97,79,0.949);
+	}
+	#T_Faculty {
+		position: absolute;
+		width: 305px;
+		height: 62px;
+		left: 44px;
+		top: 218px;
+		overflow: visible;
+	}
+	#T_Faculty_plate {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.T_Faculty_plate {
+		position: absolute;
+		overflow: visible;
+		width: 305px;
+		height: 36px;
+		left: 0px;
+		top: 0px;
+	}
+	#ID99 {
+		left: 20px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 26px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Total_number_of_Faculty {
+		left: 4px;
+		top: 39px;
+		position: absolute;
+		overflow: visible;
+		width: 190px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(162,162,162,1);
+	}
+	#T_Students {
+		position: absolute;
+		width: 305px;
+		height: 60px;
+		left: 44px;
+		top: 135px;
+		overflow: visible;
+	}
+	#T_Students_plate {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.T_Students_plate {
+		position: absolute;
+		overflow: visible;
+		width: 305px;
+		height: 36px;
+		left: 0px;
+		top: 0px;
+	}
+	#ID100 {
+		left: 20px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 34px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Total_number_of_students {
+		left: 3px;
+		top: 37px;
+		position: absolute;
+		overflow: visible;
+		width: 202px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(162,162,162,1);
+	}
+	#SFR_Calculation {
+		left: 103px;
+		top: 72px;
+		position: absolute;
+		overflow: visible;
+		width: 189px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(0,0,0,1);
+	}
+	
+	button {
+		border: none;
+	}
+
+	button:focus {
+		border: none;
+		outline: none;
+	}	
+
+
+	
+	button
+	{
+		left: -59px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 190px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		background-color: transparent;
+		cursor: pointer
+	}
+	
+	
+	input
+	{
+	 position: absolute;
+	 overflow: visible;
+	 width: 280px;
+	 height: 28px;
+	 left: -15px;
+	 top: 0px;
+	 white-space: nowrap;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	outline: none;
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="sfr.js"></script>
+</head>
+<body>
+<div id="SFRtotal" >
+	<div id="SFR_Result">
+		<svg class="SFR_plate">
+			<rect id="SFR_plate" rx="5" ry="5" x="0" y="0" width="305" height="36">
+			</rect>
+		</svg>
+		<div id="ID199" >
+			<span id="result" > - </span>
+		</div>
+		<div id="Student_Faculty_Ratio">
+			<span>Student Faculty Ratio</span>
+		</div>
+	</div>
+	<div id="Button">
+		<svg class="Button_plate">
+			<rect id="Button_plate" rx="5" ry="5" x="0" y="0" width="190" height="36">
+			</rect>
+		</svg>
+		<div id="Submit">
+			<button onclick = "submit()">Submit</button>
+		</div>
+	</div>
+	<div id="T_Faculty">
+		<svg class="T_Faculty_plate">
+			<rect id="T_Faculty_plate" rx="5" ry="5" x="0" y="0" width="305" height="36">
+			</rect>
+		</svg>
+		<div id="ID99">
+			<input id ="faculty_no" type="number">
+		</div>
+		<div id="Total_number_of_Faculty">
+			<span>Total number of Faculty</span>
+		</div>
+	</div>
+	<div id="T_Students">
+		<svg class="T_Students_plate">
+			<rect id="T_Students_plate" rx="5" ry="5" x="0" y="0" width="305" height="36">
+			</rect>
+		</svg>
+		<div id="ID100">
+			<input id ="students_no" type="number">
+		</div>
+		<div id="Total_number_of_students">
+			<span>Total number of students</span>
+		</div>
+	</div>
+	<div id="SFR_Calculation">
+		<span>SFR Calculation</span>
+	</div>
+</div>
+</body>
+</html>
